@@ -1,0 +1,57 @@
+body {
+    display: grid;
+    margin: 0; 
+}
+.wrapper {
+    max-width: 960px;
+}
+.bmw-logo{
+    width: 50px;
+    height: 50px;
+}
+
+.main-info {
+    display: flex;
+    justify-content: space-around;
+}
+.quote{
+    display: flex;
+    justify-content: space-around;
+}
+.history{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.imagecar {
+    width: 50%;
+}
+
+.container {
+    max-width: 1216px;
+    margin: auto;
+}
+
+header .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+header .navbar ul {
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+main .intro {
+    background-image: url(https://www.bmwusa.com/content/dam/bmw/common/vehicles/2024/bmw-m/m-models/desktop/BMW-MY25-M-Models-Hero-Desktop.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    color: white;
+    height: 960px;
+    width: ;
+}
