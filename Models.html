@@ -1,124 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-
-scale=1.0">
-<title>7 milestones from 50 years of BMW M history</title>
-<style>
-    main {
-        margin-bottom: 50px;
-    }
-    header {
-        display: flex;
-        justify-content: space-evenly;
-    }
-    
-    .model{
-        width: 200px;
-    }
-    .itr {
-        display: flex;
-        justify-content: space-evenly;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Milestones from 50 Years of BMW M History</title>
+    <link rel="stylesheet" href="Models.css">
 </head>
 <body>
     <header>
-        <h3><a href="./BMWMseriesHistory.html">Home</a></h3>
-        <h3><a href="./Models.html">Models</a></h3>
-        <h3><a>Blog</a></h3>
+        <div class="container">
+            <div class="nav-image">
+                <img class="bmw-logo" src="https://en.logodownload.org/wp-content/uploads/2019/07/bmw-logo-4-11.png" alt="BMW Logo">
+            </div>
+            <nav class="navbar">
+                <ul class="navbar-menus">
+                    <li><a href="./BMWMseriesHistory.html">Home</a></li>
+                    <li><a href="./Models.html">Models</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section style="margin-left: 5%;">
-            <h4>HIGH-PERFORMANCE M MODELS</h4>
-            <h2>THE POWERHOUSES</h2>
-            <p>Legendary vehicles fully developed and engineered for performance-obsessed drivers.</p>
+    <main id="content">
+        <section class="intro">
+            <h4 class="section-heading">HIGH-PERFORMANCE M MODELS</h4>
+            <h2 class="section-title">THE POWERHOUSES</h2>
+            <p class="description">Legendary vehicles fully developed and engineered for performance-obsessed drivers.</p>
         </section>
-        <div class="itr">
-            <figure>
-                <img class="model" src="https://cache.bmwusa.com/cosy.arox?pov=walkaround&brand=WBBM&vehicle=252R&client=byo&paint=P0300&fabric=FMANL&sa=S01E6,S01MB,S02MA,S02VF,S0302,S0319,S0322,S03AG,S0403,S0430,S0431,S043A,S043W,S0459,S0493,S0494,S04GQ,S04UR,S0508,S0534,S0544,S05AS,S05DC,S0688,S06AC,S06AK,S06C4,S06CP,S06U2,S06WC,S0712,S0760,S0775&quality=70&bkgnd=transparent&resp=png&width=560&w=9800&h=8000&x=100&y=600&angle=270" alt="M2 Coupe">
-                <figcaption>M2 Coupe <br>
-                    453 hp | 3.9s 0-60 MPH <br>
-                    Starting MSRP $64,900</figcaption>
+
+        <div class="car-gallery">
+            <figure class="car-model">
+                <img src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/bmw-m2-road-test-review-2023-01-tracking-front.jpg?itok=tfkuQ2Mb" alt="M2 Coupe" class="car-image">
+                <figcaption class="car-caption">M2 Coupe <br> 453 hp | 3.9s 0-60 MPH <br> Starting MSRP $64,900</figcaption>
             </figure>
-            <figure>
-                <img class="model" src="https://cache.bmwusa.com/cosy.arox?pov=walkaround&brand=WBBM&vehicle=25TN&client=byo&paint=P0300&fabric=FLKSW&sa=S01T5,S02VF,S0302,S0319,S0322,S03AG,S0430,S0431,S0459,S0493,S0494,S04GQ,S04LN,S0508,S0534,S0544,S05AC,S05AS,S0688,S06AC,S06AK,S06C4,S06NX,S06U2,S06WC,S0712,S0760,S0775&quality=70&bkgnd=transparent&resp=png&angle=270&w=9800&h=8000&x=100&y=900" alt="M3 Sedan">
-                <figcaption> M3 Sedan <br>
-                    473 hp | 4.1s 0-60 MPH <br>
-                    Starting MSRP $76,000</figcaption>
+            <figure class="car-model">
+                <img src="https://www.bmw.co.id/content/dam/bmw/common/all-models/m-series/m3-sedan/2023/highlights/bmw-3-series-cs-m-automobiles-ms-bmw-financial-services.jpg" alt="M3 Sedan" class="car-image">
+                <figcaption class="car-caption">M3 Sedan <br> 503 hp | 3.6s 0-60 MPH <br> Starting MSRP $77,795</figcaption>
             </figure>
-            <figure>
-                <img class="model" src="https://cache.bmwusa.com/cosy.arox?pov=walkaround&brand=WBBM&vehicle=25TP&client=byo&paint=P0300&fabric=FLKSW&sa=S01T8,S02VF,S0302,S0319,S0322,S03AG,S0430,S0431,S0459,S0493,S0494,S04GQ,S04LN,S0508,S0534,S0544,S05AC,S05AS,S0688,S06AC,S06AK,S06C4,S06NX,S06U2,S06WC,S0712,S0760,S0775,S07M9&quality=70&bkgnd=transparent&resp=png&angle=270&w=9800&h=8000&x=100&y=900" alt="M3 Competition Sedan">
-                <figcaption>M3 Competition Sedan<br>
-                    503 hp | 3.8s 0-60 MPH <br>
-                    Starting MSRP $80,200</figcaption>
-            </figure>
-            <figure>
-                <img class="model" src="https://cache.bmwusa.com/cosy.arox?pov=walkaround&brand=WBBM&vehicle=25TQ&client=byo&paint=P0300&fabric=FLKSW&sa=S01T8,S02VF,S0302,S0319,S0322,S03AG,S0430,S0431,S0459,S0493,S0494,S04GQ,S04LN,S0508,S0534,S0544,S05AC,S05AS,S0688,S06AC,S06AK,S06C4,S06NX,S06U2,S06WC,S0712,S0760,S0775,S07M9&quality=70&bkgnd=transparent&resp=png&angle=270&w=9800&h=8000&x=100&y=900" alt="M3 Competition xDrive Sedan">
-                <figcaption>M3 Competition xDrive Sedan <br>
-                    503 hp | 3.4s 0-60 MPH <br>
-                    Starting MSRP $85,300</figcaption>
+            <figure class="car-model">
+                <img src="https://images.dealer.com/autodata/us/640/color/2024/USD40BMC641A0/300.jpg" alt="M4 couple" class="car-image">
+                <figcaption class="car-caption">M4 Coupe <br> 473 hp | 3.8s 0-60 MPH <br> Starting MSRP $74,700</figcaption>
             </figure>
         </div>
-        <div class="itr">
-            <figure>
-                <img class="model" src="https://cache.bmwusa.com/cosy.arox?pov=walkaround&brand=WBBM&vehicle=254X&client=byo&paint=P0300&fabric=FLKSW&sa=S01T8,S02VF,S0302,S0319,S0322,S03AG,S0430,S0431,S0459,S0493,S0494,S04GQ,S04LN,S0508,S0534,S0544,S0552,S05AC,S05AS,S0688,S06AC,S06AK,S06C4,S06NX,S06U2,S06WC,S0712,S0760,S0775,S07M9&quality=70&bkgnd=1&w=9800&h=8000&x=180&y=800&resp=jpg&angle=270&quality=70&bkgnd=1&w=9800&h=8000&x=180&y=800&resp=jpg&angle=270" alt="M4 Competition Coupe">
-                <figcaption>M4 Competition Coupe <br>
-                    503 hp | 3.8s 0-60 MPH <br>
-                    Starting MSRP $83,200</figcaption>
-            </figure>
-            <figure>
-                <img class="model" src="https://cache.bmwusa.com/cosy.arox?pov=walkaround&brand=WBBM&vehicle=258K&client=byo&paint=P0300&fabric=FLKSW&sa=S01MA,S01TH,S0302,S0316,S0319,S0322,S03MF,S0453,S04GQ,S04HB,S04MC,S05AC,S05AZ,S06AC,S06AK,S06C4,S06NW,S06U3,S06WD,S0712,S0760,S07M9,S07MA&quality=70&bkgnd=1&w=9800&h=8000&x=180&y=800&resp=jpg&angle=270" alt="M4 Competition xDrive Convertible">
-                <figcaption>
-                    M4 Competition xDrive Convertible <br>
-                    523 hp | 3.6s 0-60 MPH <br>
-                    Starting MSRP $95,300</figcaption>
-            </figure>
-            <figure>
-                <img class="model" src="https://cache.bmwusa.com/cosy.arox?pov=walkaround&brand=WBBM&vehicle=258L&client=byo&paint=P0300&fabric=FLKSW&sa=S01MA,S01TH,S0302,S0319,S0322,S03MF,S0415,S0416,S0453,S04GQ,S04HB,S04MC,S04NB,S05AC,S05AZ,S06AC,S06AK,S06C4,S06NW,S06U3,S06WD,S0712,S0760,S0776,S07M9,S07MA&quality=70&bkgnd=1&w=9800&h=8000&x=180&y=800&resp=jpg&angle=270" alt="M4 Competition xDrive Coupe">
-                <figcaption>M4 Competition xDrive Coupe <br>
-                    523 hp | 3.4s 0-60 MPH <br>
-                    Starting MSRP $88,300</figcaption>
-            </figure>
-            <figure>
-                <img class="model" src="https://cache.bmwusa.com/cosy.arox?pov=walkaround&brand=WBBM&vehicle=24XE&client=byo&paint=P0300&fabric=FKHSW&sa=S01CE,S01VU,S02NH,S02TB,S02VF,S02VG,S0302,S0319,S0322,S03AG,S03DZ,S03MC,S0402,S0420,S0423,S0430,S0431,S0459,S0481,S0493,S04AW,S04KN,S04U0,S04UR,S0508,S0534,S0552,S05AC,S05AS,S05AV,S0676,S06AC,S06AK,S06C4,S06U3,S0710,S0715,S0760,S0775&quality=70&bkgnd=transparent&resp=png&angle=270&w=9800&h=8000&x=100&y=900" alt="M4 Coupe">
-                <figcaption>M4 Coupe <br>
-                    473 hp | 4.1s 0-60 MPH <br>
-                    Starting MSRP $79,100 
-                    </figcaption>
-            </figure>
+
+        <h3 class="section-center">BMW M9</h3>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/0AsrgYOTCcQ" allowfullscreen></iframe>
         </div>
-        <h3 style="display: flex; justify-content: center;">BMW M9</h3>
-        <div style="margin-top: 50px; display: flex; justify-content: center;">
-            
-            <iframe style="width: 800px; height: 500px; " src="https://www.youtube.com/embed/0AsrgYOTCcQ" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-        <div style="display: flex;justify-content: center;">
-            <h3>Top 10 BMW M cars</h3>
-        </div>
-        <div style="display: flex;justify-content: center; margin-top: -20px;">
-            <ol>
+
+        <div class="top-cars-section">
+            <h3 class="section-center">Top 10 BMW M Cars</h3>
+            <ol class="car-list">
                 <li>BMW M3</li>
                 <li>BMW M1</li>
-                <li>BMW M2</li>
                 <li>BMW M5</li>
-                <li>E28 M5</li>
-                <li>BMW E34 M5</li>
-                <li>BMW E30 M3</li>
-                <li>2011 BMW 1M Coupe</li>
-                <li>BMW M Coupe</li>
+                <li>BMW M2</li>
                 <li>BMW M4</li>
+                <li>BMW M8</li>
+                <li>BMW X5 M</li>
+                <li>BMW X6 M</li>
+                <li>BMW Z3 M</li>
+                <li>BMW 1M Coupe</li>
             </ol>
         </div>
     </main>
-    <footer>
-        <Section>
-            <h3 style="margin-left: 50px;">About us</h3>
-            <blockquote style="font-style: italic; color:blue">Student:Yernar Bukembay</blockquote>
-            <blockquote style="font-style: italic; color:blue">Date: 10/09/2024</blockquote>
-            <blockquote style="font-style: italic; color:blue">Email:230840@astanait.edu.kz</blockquote>
-        </Section>
-    </footer>       
+
+    <footer id="footer">
+        <section class="footer-content">
+            <h3>About Us</h3>
+            <blockquote>Student: Ернар Букембай</blockquote>
+            <blockquote>Date: 10/09/2024</blockquote>
+            <blockquote>Email: 230840@astanait.edu.kz</blockquote>
+        </section>
+    </footer>
 </body>
 </html>
