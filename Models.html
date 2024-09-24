@@ -1,76 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>7 Milestones from 50 Years of BMW M History</title>
-    <link rel="stylesheet" href="Models.css">
+    <link rel="stylesheet" href="./Models.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <div class="nav-image">
-                <img class="bmw-logo" src="https://en.logodownload.org/wp-content/uploads/2019/07/bmw-logo-4-11.png" alt="BMW Logo">
-            </div>
-            <nav class="navbar">
-                <ul class="navbar-menus">
-                    <li><a href="./BMWMseriesHistory.html">Home</a></li>
-                    <li><a href="./Models.html">Models</a></li>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="https://www.bmw.com/etc.clientlibs/settings/wcm/designs/bmwcom/base/resources/ci2020/img/logo-light.svg" alt="BMW Logo" width="40" height="40" class="me-2">
+                <span>BMW History</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./BMWMseriesHistory.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./Models.html">Models</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-secondary ms-lg-2" href="#contact">Contact</a>
+                    </li>
                 </ul>
-            </nav>
+            </div>
         </div>
-    </header>
-    <main id="content">
-        <section class="intro">
-            <h4 class="section-heading">HIGH-PERFORMANCE M MODELS</h4>
-            <h2 class="section-title">THE POWERHOUSES</h2>
-            <p class="description">Legendary vehicles fully developed and engineered for performance-obsessed drivers.</p>
+    </nav>
+    
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Introduction Section -->
+        <section class="intro-bg text-center mb-5">
+            <div>
+                <h4 class="text-uppercase">High-Performance M Models</h4>
+                <h2 class="display-5">The Powerhouses</h2>
+                <p class="lead">Legendary vehicles fully developed and engineered for performance-obsessed drivers.</p>
+            </div>
         </section>
 
-        <div class="car-gallery">
-            <figure class="car-model">
-                <img src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/bmw-m2-road-test-review-2023-01-tracking-front.jpg?itok=tfkuQ2Mb" alt="M2 Coupe" class="car-image">
-                <figcaption class="car-caption">M2 Coupe <br> 453 hp | 3.9s 0-60 MPH <br> Starting MSRP $64,900</figcaption>
-            </figure>
-            <figure class="car-model">
-                <img src="https://www.bmw.co.id/content/dam/bmw/common/all-models/m-series/m3-sedan/2023/highlights/bmw-3-series-cs-m-automobiles-ms-bmw-financial-services.jpg" alt="M3 Sedan" class="car-image">
-                <figcaption class="car-caption">M3 Sedan <br> 503 hp | 3.6s 0-60 MPH <br> Starting MSRP $77,795</figcaption>
-            </figure>
-            <figure class="car-model">
-                <img src="https://images.dealer.com/autodata/us/640/color/2024/USD40BMC641A0/300.jpg" alt="M4 couple" class="car-image">
-                <figcaption class="car-caption">M4 Coupe <br> 473 hp | 3.8s 0-60 MPH <br> Starting MSRP $74,700</figcaption>
-            </figure>
-        </div>
-
-        <h3 class="section-center">BMW M9</h3>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/0AsrgYOTCcQ" allowfullscreen></iframe>
-        </div>
-
-        <div class="top-cars-section">
-            <h3 class="section-center">Top 10 BMW M Cars</h3>
-            <ol class="car-list">
-                <li>BMW M3</li>
-                <li>BMW M1</li>
-                <li>BMW M5</li>
-                <li>BMW M2</li>
-                <li>BMW M4</li>
-                <li>BMW M8</li>
-                <li>BMW X5 M</li>
-                <li>BMW X6 M</li>
-                <li>BMW Z3 M</li>
-                <li>BMW 1M Coupe</li>
-            </ol>
+        <!-- Car Gallery -->
+        <div class="row mb-5">
+            <!-- Car 1: M2 Coupe -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://www.bmwusa.com/content/dam/bmw/common/vehicles/2024/my25/m-models/m2-coupe/overview/desktop/BMW-MY25-M2-Overview-FMA-Desktop-v2.jpg" alt="M2 Coupe" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">M2 Coupe</h5>
+                        <p class="card-text">453 hp | 3.9s 0-60 MPH <br> Starting MSRP $64,900</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Car 2: M3 Sedan -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://bmw.scene7.com/is/image/BMW/BMW-MY25-M3-DF24_000203291_FB-Retouched-v3:16to7?fmt=webp&wid=1504&hei=658" alt="M3 Sedan" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">M3 Sedan</h5>
+                        <p class="card-text">473 hp | 4.1s 0-60 MPH <br> Starting MSRP $76,000</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Car 3: M3 Competition Sedan -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://www.bmw.co.th/content/dam/bmw/common/all-models/m-series/m3-sedan/2023/highlights/bmw-3-series-cs-m-automobiles-sp-desktop.jpg" alt="M3 Competition Sedan" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">M3 Competition Sedan</h5>
+                        <p class="card-text">503 hp | 3.8s 0-60 MPH <br> Starting MSRP $80,200</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Car 4: M3 Competition xDrive Sedan -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://www.topgear.com/sites/default/files/2021/10/ROW02344.jpg" alt="M3 Competition xDrive Sedan" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">M3 Competition xDrive Sedan</h5>
+                        <p class="card-text">503 hp | 3.4s 0-60 MPH <br> Starting MSRP $85,300</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Car 5: M4 Competition Coupe -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://bmw.scene7.com/is/image/BMW/BMW-MY25-M4CS-P004_FB-1_G82-8718_Ext_Mob_DE_v002-retouched:16to7?fmt=webp&wid=1504&hei=658" alt="M4 Competition Coupe" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">M4 Competition Coupe</h5>
+                        <p class="card-text">503 hp | 3.8s 0-60 MPH <br> Starting MSRP $83,200</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Car 6: M4 Competition xDrive Convertible -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://bmw.scene7.com/is/image/BMW/230427122_BMW_G8X_Artwork_G83_stage-updated:16to7?fmt=webp&wid=1504&hei=658" alt="M4 Competition xDrive Convertible" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">M4 Competition xDrive Convertible</h5>
+                        <p class="card-text">523 hp | 3.6s 0-60 MPH <br> Starting MSRP $95,300</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Car 7: M4 Competition xDrive Coupe -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://i.ytimg.com/vi/1nBTJMi9r0g/maxresdefault.jpg" alt="M4 Competition xDrive Coupe" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">M4 Competition xDrive Coupe</h5>
+                        <p class="card-text">523 hp | 3.4s 0-60 MPH <br> Starting MSRP $88,300</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Car 8: M4 Coupe -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://www.bmw-m.com/content/dam/bmw/marketBMW_M/www_bmw-m_com/all-models/m-automobile/m4coupe/2024/bmw-m4-coupe-mg-01.jpg" alt="M4 Coupe" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">M4 Coupe</h5>
+                        <p class="card-text">473 hp | 4.1s 0-60 MPH <br> Starting MSRP $79,100</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Car 9: M8 Competition Coupe -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://www.bmw.in/content/dam/bmw/marketIN/bmw_in/all-models/m-series/M8-competition/m8-competition-coupe-header.jpg" alt="M8 Competition Coupe" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">M8 Competition Coupe</h5>
+                        <p class="card-text">617 hp | 3.0s 0-60 MPH <br> Starting MSRP $138,800</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Car 10: M8 Competition Convertible -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://media.ed.edmunds-media.com/bmw/m8/2025/oem/2025_bmw_m8_convertible_competition_fq_oem_1_1600.jpg" alt="M8 Competition Convertible" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">M8 Competition Convertible</h5>
+                        <p class="card-text">617 hp | 3.1s 0-60 MPH <br> Starting MSRP $142,700</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Car 11: M8 Competition Gran Coupe -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://www.topgear.com/sites/default/files/cars-car/image/2020/08/p90369588_highres.jpg" alt="M8 Competition Gran Coupe" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">M8 Competition Gran Coupe</h5>
+                        <p class="card-text">617 hp | 3.0s 0-60 MPH <br> Starting MSRP $138,800</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Car 12: X5 M -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://cdn.motor1.com/images/mgl/pb74WW/s3/bmw-x5-m-mhx5-700-by-manhart.jpg" alt="X5 M" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">X5 M</h5>
+                        <p class="card-text">600 hp | 3.8s 0-60 MPH <br> Starting MSRP $108,000</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Car 13: X6 M -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/p90495552-1677001915.jpg" alt="X6 M" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">X6 M</h5>
+                        <p class="card-text">600 hp | 3.8s 0-60 MPH <br> Starting MSRP $109,600</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Car 14: M5 Competition -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://preview.redd.it/b1so8plcfto61.jpg?width=1080&crop=smart&auto=webp&s=d4738e77fe2988c0757f80913cfdaac225d75d76" alt="M5 Competition" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">M5 Competition</h5>
+                        <p class="card-text">617 hp | 3.3s 0-60 MPH <br> Starting MSRP $106,000</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Car 15: M8 Gran Coupe -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://www.bmw.ie/content/dam/bmw/common/all-models/m-series/m8-gran-coupe/2022/onepager/bmw-m8-gran-coupe-onepager-sp-desktop.jpg" alt="M8 Gran Coupe" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">M8 Gran Coupe</h5>
+                        <p class="card-text">600 hp | 3.0s 0-60 MPH <br> Starting MSRP $135,000</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
-    <footer id="footer">
-        <section class="footer-content">
-            <h3>About Us</h3>
-            <blockquote>Student: Ернар Букембай</blockquote>
-            <blockquote>Date: 10/09/2024</blockquote>
-            <blockquote>Email: 230840@astanait.edu.kz</blockquote>
-        </section>
+    <!-- Footer -->
+    <footer class="text-center bg-dark text-light py-4">
+        <div class="container">
+            <p>&copy; 2024 BMW M History. All Rights Reserved.</p>
+            <div id="contact">
+                <h5>Contact Us</h5>
+                <p>Email: 230840@astanait.edu.kz</p>
+                <p>Developed by Yernar Bukembay</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
