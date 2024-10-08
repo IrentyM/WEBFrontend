@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style/BMWMseriesHistory.css">
     <script defer src="script/faq.js"></script>
+    <script defer src="script/popup.js"></script>
 </head>
 
 <body>
@@ -207,45 +208,38 @@
     </main>
     <!-- FAQs content  -->
     <section class="container my-5">
-        <h2 class="FAQs-title text-center mb-4">FAQs</h2>
-        <div class="faq mb-3 p-3 border rounded">
-            <div class="question d-flex justify-content-between align-items-center">
-                <h3 class="mb-0">What's so special about the BMW M series?</h3>
-            </div>
-            <div class="answer mt-3">
+        <div class="faq-section">
+            <h2 class="faq-title">What's so special about the BMW M series?</h2>
+            <div class="faq-content">
                 <p>These new M Series vehicles have modified engines, transmissions, suspensions, interior trims, aerodynamics, and exterior modifications to set them apart from their BWM counterparts.</p>
             </div>
         </div>
-        <div class="faq mb-3 p-3 border rounded">
-            <div class="question d-flex justify-content-between align-items-center">
-                <h3 class="mb-0">What is the most popular BMW M Series?</h3>
-            </div>
-            <div class="answer mt-3">
+    
+        <div class="faq-section">
+            <h2 class="faq-title">What is the most popular BMW M Series?</h2>
+            <div class="faq-content">
                 <p>The E46-generation BMW M3 is by far the most successful M car in terms of sales. Looking back, it's easy to see why: At the time, the concept of a sleek coupe with enough power to be fun (333 horses from a 3.2-liter straight-six in North America), but not so much as to overwhelm its nimble chassis, was a rare formula.</p>
             </div>
         </div>
-        <div class="faq mb-3 p-3 border rounded">
-            <div class="question d-flex justify-content-between align-items-center">
-                <h3 class="mb-0">What does the BMW M Series stand for?</h3>
-            </div>
-            <div class="answer mt-3">
+    
+        <div class="faq-section">
+            <h2 class="faq-title">What does the BMW M Series stand for?</h2>
+            <div class="faq-content">
                 <p>BMW M ("M" for "motorsport") was initially created to facilitate BMW's racing program, which was very successful in the 1960s and 1970s. As time passed, BMW M began to supplement BMW's vehicle portfolio with specially modified higher trim models, for which they are now most known by the general public.</p>
             </div>
         </div>
-        <div class="faq mb-3 p-3 border rounded">
-            <div class="question d-flex justify-content-between align-items-center">
-                <h3 class="mb-0">Which BMW M series is the fastest?</h3>
-            </div>
-            <div class="answer mt-3">
+
+        <div class="faq-section">
+            <h2 class="faq-title">Which BMW M series is the fastest?</h2>
+            <div class="faq-content">
                 <p>The BMW M8 Competition Coupe currently holds the title as the fastest production car in the BMW lineup.</p>
             </div>
         </div>
-        <div class="faq mb-3 p-3 border rounded">
-            <div class="question d-flex justify-content-between align-items-center">
-                <h3 class="mb-0">Why is BMW so popular?</h3>
-            </div>
-            <div class="answer mt-3">
-                <p>BMW has a long history of racing, and they have used that experience to develop some of the best-handling cars in the world. BMW's racing heritage is evident in every car they make, and it's one of the reasons why BMW cars are so highly regarded by car enthusiasts.</p>
+
+        <div class="faq-section">
+            <h2 class="faq-title">How old is BMW M?</h2>
+            <div class="faq-content">
+                <p>BMW M GmbH was founded in 1972 as BMW Motorsport GmbH and is a BMW AG subsidiary. BMW M produces high-performance and particularly sporty BMW models. Many have legendary status and are classics.</p>
             </div>
         </div>
     </section>
@@ -255,12 +249,29 @@
         <div class="container">
             <p>&copy; 2024 BMW M History. All Rights Reserved.</p>
             <div id="contact">
-                <h5>Contact Us</h5>
+                <button id="open-popup">Subscribe to our Newsletter</button>
                 <p>Email: 230840@astanait.edu.kz</p>
                 <p>Developed by Yernar Bukembay</p>
             </div>
         </div>
     </footer>
+
+    <!-- The Popup Form -->
+    <div id="popup-form" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Subscribe to our Newsletter</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
 
 </body>
 

@@ -1,10 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const questions = document.querySelectorAll('.question');
+  const faqTitles = document.querySelectorAll('.faq-title');
 
-  questions.forEach(question => {
-      question.addEventListener('click', function() {
-          const answer = this.nextElementSibling;
-          answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+  faqTitles.forEach(title => {
+      title.addEventListener('click', function() {
+          const faqSection = this.parentElement;
+          const content = faqSection.querySelector('.faq-content');
+
+          faqSection.classList.toggle('active');
       });
   });
 });
