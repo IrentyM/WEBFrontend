@@ -1,0 +1,12 @@
+.faq .answer {
+    display: none;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+}
+
+.faq.active .answer {
+    display: block;
+}
+
+.faq.active .toggle-icon {
+    transform: rotate(180deg);
+}
