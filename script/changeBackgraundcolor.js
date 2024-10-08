@@ -1,4 +1,4 @@
-const colors = ["rgb(3,57,97)", "#33FF57", "#3357FF", "#F5FF33", "#FF33A8"];
+const colors = ["#0000CD", "#778899", "#2F4F4F", "##008080", "#40E0D0"];
 let currentColorIndex = 0;
 
 function changeBackgroundColor() {

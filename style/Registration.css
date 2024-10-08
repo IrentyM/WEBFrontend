@@ -1,6 +1,11 @@
 body {
     font-family: 'Poppins', sans-serif;
-    transition: background-color 0.5s;
+    transition: background-color 0.5s ease;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 #form {
@@ -87,7 +92,7 @@ body {
 }
 
 .popup-content {
-    background-color: #847f7f;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     width: 500px;
@@ -138,3 +143,20 @@ body {
 .close:hover {
     color: #000;
 }
+
+
+#colorButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(41, 57, 194);;
+    color: white;
+    border-radius: 5px;
+}
+
+#dateTime {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
