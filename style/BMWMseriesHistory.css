@@ -20,7 +20,7 @@
     max-height: 0; 
     overflow: hidden;
     padding: 0 15px;
-    transition: max-height 0.5s ease, padding 0.5s ease;
+    transition: max-height 1s ease, padding 1s ease;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-top: none;
@@ -40,13 +40,13 @@
     font-size: 16px;
     cursor: pointer;
     border: none;
-    background-color: rgb(41, 57, 194);;
+    background-color: rgb(41, 57, 194);
     color: white;
     border-radius: 5px;
 }
 
 #open-popup:hover {
-    background-color: rgb(41, 57, 194);;
+    background-color: rgb(41, 57, 194);
 }
 
 /* Popup form style */
@@ -91,7 +91,7 @@
 
 .popup-content button {
     padding: 10px 20px;
-    background-color: rgb(41, 57, 194);;
+    background-color: rgb(41, 57, 194);
     border: none;
     color: white;
     border-radius: 5px;
@@ -99,7 +99,7 @@
 }
 
 .popup-content button:hover {
-    background-color:rgb(41, 57, 194);;
+    background-color:rgb(41, 57, 194);
 }
 
 .close {

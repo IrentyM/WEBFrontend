@@ -69,13 +69,13 @@ body {
     font-size: 16px;
     cursor: pointer;
     border: none;
-    background-color: rgb(41, 57, 194);;
+    background-color: rgb(41, 57, 194);
     color: white;
     border-radius: 5px;
 }
 
 #open-popup:hover {
-    background-color: rgb(41, 57, 194);;
+    background-color: rgb(41, 57, 194);
 }
 
 /* Popup form style */
@@ -86,7 +86,7 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); 
+    background-color: rgba(0, 0, 0, 0.7);
     justify-content: center;
     align-items: center;
 }
@@ -120,7 +120,7 @@ body {
 
 .popup-content button {
     padding: 10px 20px;
-    background-color: rgb(41, 57, 194);;
+    background-color: rgb(41, 57, 194);
     border: none;
     color: white;
     border-radius: 5px;
@@ -128,7 +128,7 @@ body {
 }
 
 .popup-content button:hover {
-    background-color:rgb(41, 57, 194);;
+    background-color:rgb(41, 57, 194);
 }
 
 .close {
@@ -150,7 +150,7 @@ body {
     font-size: 16px;
     cursor: pointer;
     border: none;
-    background-color: rgb(41, 57, 194);;
+    background-color: rgb(41, 57, 194);
     color: white;
     border-radius: 5px;
 }

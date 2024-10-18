@@ -14,13 +14,13 @@
     font-size: 16px;
     cursor: pointer;
     border: none;
-    background-color: rgb(41, 57, 194);;
+    background-color: rgb(41, 57, 194);
     color: white;
     border-radius: 5px;
 }
 
 #open-popup:hover {
-    background-color: rgb(41, 57, 194);;
+    background-color: rgb(41, 57, 194);
 }
 
 /* Popup form style */
@@ -65,7 +65,7 @@
 
 .popup-content button {
     padding: 10px 20px;
-    background-color: rgb(41, 57, 194);;
+    background-color: rgb(41, 57, 194);
     border: none;
     color: white;
     border-radius: 5px;
@@ -73,7 +73,7 @@
 }
 
 .popup-content button:hover {
-    background-color:rgb(41, 57, 194);;
+    background-color:rgb(41, 57, 194);
 }
 
 .close {

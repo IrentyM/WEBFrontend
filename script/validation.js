@@ -7,7 +7,7 @@ const password2 = document.getElementById('password2');
 form.addEventListener('submit', e => {
     e.preventDefault();
     if (validateInputs()) {
-        alert('Вы успешно зарегистрированы!');
+        alert('You have successfully registered!');
     }
 });
 
@@ -35,7 +35,6 @@ const isValidEmail = email => {
 };
 
 const validateInputs = () => {
-    console.log("Валидация началась");
     const usernameValue = username.value.trim();
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();

@@ -4,11 +4,11 @@ function displayDateTime() {
         weekday: 'long',
         year: 'numeric',
         month: 'long',
-        day: 'numeric',
+        day: 'numeric', 
         hour: 'numeric',
         minute: 'numeric',
         second: 'numeric',
-        hour12: true 
+        hour12: false
     };
     
     const formattedDateTime = date.toLocaleDateString('en-US', options);
