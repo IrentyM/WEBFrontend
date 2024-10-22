@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="style/BMWMseriesHistory.css">
     <script defer src="script/faq.js"></script>
     <script defer src="script/popup.js"></script>
+    <script defer src="script/ChangQuote.js"></script>
+    <script defer src="script/darkLight.js"></script>
 </head>
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="https://www.bmw.com/etc.clientlibs/settings/wcm/designs/bmwcom/base/resources/ci2020/img/logo-light.svg" alt="BMW Logo" width="40" height="40" class="me-2">
@@ -24,6 +26,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <button id="theme-toggle" class="btn btn-secondary btn-lg">Toggle Theme</button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -116,7 +119,10 @@
 
     <!-- Main Content -->
     <main class="container my-5">
-        <h2 class="text-center mb-4">7 Milestones from 50 Years of BMW M History</h2>
+        <div class="col-md-12 text-center">
+            <h2 class="text-center mb-4" id="changetext">7 Milestones from 50 Years of BMW M History</h2>
+            <button id="change-text-btn" class="btn btn-primary btn-lg">Change Quote</button>    
+          </div>
         <div class="row">
             <div class="col-lg-6 mb-4">
                 <h4 class="text-primary">Introduction</h4>

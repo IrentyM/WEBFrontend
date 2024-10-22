@@ -1,3 +1,29 @@
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.light-theme {
+    background: #7d7d7d;; 
+    color: black;
+}
+
+.dark-theme {
+    background-color: #333;
+    color: white;
+}
+
+.navbar {
+    transition: background-color 0.3s;
+}
+
+.light-theme .navbar {
+    background-color: #333;
+}
+
+.dark-theme .navbar {
+    background-color: #7d7d7d; 
+}
+
 .faq-section {
     margin-bottom: 10px;
 }
