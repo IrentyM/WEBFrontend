@@ -3,13 +3,19 @@ body {
 }
 
 .light-theme {
-    background: #7d7d7d;; 
+    background: #ffffff;; 
     color: black;
 }
 
 .dark-theme {
-    background-color: #333;
+    background-color: #1b1818;
     color: white;
+}
+
+
+.menu-item:focus {
+    outline: none;
+    background-color: #e0e0e0; 
 }
 
 .navbar {
@@ -24,12 +30,63 @@ body {
     background-color: #7d7d7d; 
 }
 
+.rotate {
+    animation: spin 0.5s ease-in-out;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+#theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: none;
+    cursor: pointer;
+}
+
+.theme-icon {
+    margin-right: 8px;
+}
+/*read more style*/
+#additional-content {
+    display: none; 
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#read-more-btn {
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
+
+#read-more-btn:hover {
+    background-color: #0056b3; 
+}
+
+/* faq style */
+
+
 .faq-section {
     margin-bottom: 10px;
 }
 
 .faq-title {
-    background-color: #f1f1f1;
+    background-color: #3134d6;
     padding: 15px;
     cursor: pointer;
     border: 1px solid #ddd;
@@ -47,7 +104,7 @@ body {
     overflow: hidden;
     padding: 0 15px;
     transition: max-height 1s ease, padding 1s ease;
-    background-color: #f9f9f9;
+    background-color: #3887d1;
     border: 1px solid #ddd;
     border-top: none;
 }
@@ -60,7 +117,7 @@ body {
     max-height: 200px; 
     padding: 15px;
 }
-
+/* open popup form style  */
 #open-popup{
     padding: 10px 20px;
     font-size: 16px;
@@ -140,3 +197,5 @@ body {
 .close:hover {
     color: #000;
 }
+
+

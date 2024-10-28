@@ -17,6 +17,8 @@
     <script defer src="script/popup.js"></script>
     <script defer src="script/changeBackgraundcolor.js"></script>
     <script defer src="script/dateandtime.js"></script>
+    <script defer src="script/KeyboardEventHandling.js"></script>
+    <script defer src="script/greeting.js"></script>
 </head>
 
 <body>
@@ -26,13 +28,9 @@
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="https://www.bmw.com/etc.clientlibs/settings/wcm/designs/bmwcom/base/resources/ci2020/img/logo-light.svg" alt="BMW Logo" width="40" height="40" class="me-2">
                 <span>BMW History</span>
-                <p id="dateTime"></p>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto" id="menu">
                     <li class="nav-item">
                         <a class="nav-link" href="./BMWMseriesHistory.html">Home</a>
                     </li>
@@ -50,32 +48,48 @@
         </div>
     </nav>
 
-    <div class="container">
-        <form id="form" action="">
+    <div class="container mt-5">
+        <form id="form">
+            <h1 id="greeting"></h1>
             <h1>Registration</h1>
-            <div class="input-control">
-                <label for="username">Username</label>
-                <input id="username" name="username" type="text">
-                <div class="error"></div>
+            
+            <div class="step active" id="step1">
+                <div class="input-control">
+                    <label for="username">Username</label>
+                    <input id="username" name="username" type="text">
+                    <div class="error"></div>
+                </div>
+                <button type="button" id="next1">Next</button>
             </div>
-            <div class="input-control">
-                <label for="email">Email</label>
-                <input id="email" name="email" type="text">
-                <div class="error"></div>
+
+            <div class="step" id="step2">
+                <div class="input-control">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="text">
+                    <div class="error"></div>
+                </div>
+                <button type="button" id="next2">Next</button>
+                <button type="button" id="back1">Back</button>
             </div>
-            <div class="input-control">
-                <label for="password">Password</label>
-                <input id="password" name="password" type="password">
-                <div class="error"></div>
+
+            <div class="step" id="step3">
+                <div class="input-control">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="password2">Password again</label>
+                    <input id="password2" name="password2" type="password">
+                    <div class="error"></div>
+                </div>
+                <button type="button" id="back2">Back</button>
+                <button type="submit">Sign Up</button>
+                <button type="button" id="reset-btn">Reset</button>
             </div>
-            <div class="input-control">
-                <label for="password2">Password again</label>
-                <input id="password2" name="password2" type="password">
-                <div class="error"></div>
-            </div>
-            <button type="submit">Sign Up</button>
         </form>
     </div>
+    
 
     
    <!-- Footer -->
