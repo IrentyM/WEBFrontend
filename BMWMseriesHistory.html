@@ -13,6 +13,10 @@
     <script defer src="script/popup.js"></script>
     <script defer src="script/ChangQuote.js"></script>
     <script defer src="script/darkLight.js"></script>
+    <script defer src="script/ReadMore.js"></script>
+    <script defer src="script/KeyboardEventHandling.js"></script>
+    <script src="script/greeting.js"></script>
+
 </head>
 
 <body>
@@ -28,7 +32,7 @@
             </button>
             <button id="theme-toggle" class="btn btn-secondary btn-lg">Toggle Theme</button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto" id="menu">
                     <li class="nav-item">
                         <a class="nav-link active" href="./BMWMseriesHistory.html">Home</a>
                     </li>
@@ -207,6 +211,10 @@
                     <div class="card-body">
                         <h5 class="card-title">BMW M8 Competition (F91) 2019</h5>
                         <p>The M8 Competition combines elegance with extreme performance. Its 4.4L V8 engine produces 617 hp, making it a blend of luxury and thrill, proving that the BMW M legacy continues into the future.</p>
+                        <div id="additional-content">
+                            <p>How does a vehicle earn its place on the BMW M milestone list a mere year after its release? Simple: by being the first BMW vehicle sporting the M Performance badge to be powered by an e-motor (➜ Read also: All e-car concepts). Combustion engine fans will soon drop any questions about whether the BMW i4 M50 is worthy of the M badge when they find themselves pressed into their seats by the sheer force of the 795 Nm of torque and 400 kW (544 hp) during acceleration, their breath taken away. It fully deserves its M suspension, sports steering and sports brakes. So ultimately, the features of the BMW i4 M50 ensure that it is a fully-fledged member of this article’s milestone BMW M family. And what’s more, it leaves car fans eagerly looking forward to future electrified sporty models that BMW will be rolling out on the road in times to come.</p>
+                        </div>
+                        <button id="read-more-btn" onclick="toggleContent()">Read more</button>                         
                     </div>
                 </div>
             </div>
