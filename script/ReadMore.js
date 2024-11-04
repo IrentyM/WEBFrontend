@@ -5,8 +5,9 @@ function toggleContent() {
     if (content.style.display === "none") {
         content.style.display = "block"; 
         button.innerText = "Hide"; 
+        // content.style.fon
     } else {
         content.style.display = "none";
-        button.innerText = "Read More"; 
+        button.innerText = "Read More";
     }
 }

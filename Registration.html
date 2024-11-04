@@ -21,7 +21,7 @@
     <script defer src="script/greeting.js"></script>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -35,7 +35,7 @@
                         <a class="nav-link" href="./BMWMseriesHistory.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="./Models.html">Models</a>
+                        <a class="nav-link" href="./Models.html">Models</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="./Registration.html">Registration</a>
@@ -48,52 +48,60 @@
         </div>
     </nav>
 
-    <div class="container mt-5">
-        <form id="form">
-            <h1 id="greeting"></h1>
-            <h1>Registration</h1>
-            
-            <div class="step active" id="step1">
-                <div class="input-control">
-                    <label for="username">Username</label>
-                    <input id="username" name="username" type="text">
-                    <div class="error"></div>
-                </div>
-                <button type="button" id="next1">Next</button>
-            </div>
+    <!-- Main Content -->
+    <div class="container mt-5 flex-grow-1">
+        <!-- Навигация -->
+        <div class="d-flex justify-content-center mb-4">
+            <button class="btn btn-primary me-2" id="show-login">Login</button>
+            <button class="btn btn-secondary" id="show-registration">Registration</button>
+        </div>
 
-            <div class="step" id="step2">
-                <div class="input-control">
-                    <label for="email">Email</label>
-                    <input id="email" name="email" type="text">
-                    <div class="error"></div>
-                </div>
-                <button type="button" id="next2">Next</button>
-                <button type="button" id="back1">Back</button>
+        <!-- Login form -->
+        <form id="login-form" class="d-none">
+            <h2 class="text-center">Login</h2>
+            <div class="mb-3">
+                <label for="login-username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="login-username" required>
             </div>
-
-            <div class="step" id="step3">
-                <div class="input-control">
-                    <label for="password">Password</label>
-                    <input id="password" name="password" type="password">
-                    <div class="error"></div>
-                </div>
-                <div class="input-control">
-                    <label for="password2">Password again</label>
-                    <input id="password2" name="password2" type="password">
-                    <div class="error"></div>
-                </div>
-                <button type="button" id="back2">Back</button>
-                <button type="submit">Sign Up</button>
-                <button type="button" id="reset-btn">Reset</button>
+            <div class="mb-3">
+                <label for="login-password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="login-password" required>
             </div>
+            <div id="login-error" class="text-danger d-none">Invalid username or password.</div>
+            <button type="submit" class="btn btn-primary w-100">Login</button>
         </form>
-    </div>
-    
 
-    
-   <!-- Footer -->
-   <footer class="text-center bg-dark text-light py-4">
+      <!-- Registration form -->
+        <form id="registration-form" class="d-none">
+            <h2 class="text-center">Registration</h2>
+            <div class="mb-3">
+                <label for="reg-username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="reg-username" required>
+            </div>
+            <div class="mb-3">
+                <label for="reg-email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="reg-email" required>
+            </div>
+            <div class="mb-3">
+                <label for="reg-password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="reg-password" required>
+            </div>
+            <div class="mb-3">
+                <label for="reg-password2" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="reg-password2" required>
+            </div>
+            <div id="registration-error" class="text-danger d-none">Passwords do not match.</div>
+            <button type="submit" class="btn btn-secondary w-100">Register</button>
+        </form>
+
+ <!-- Successful login message -->
+        <div id="success-message" class="alert alert-success text-center mt-4 d-none">
+            Login successful! Welcome!
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center bg-dark text-light py-4 mt-auto">
         <div class="container">
             <button id="colorButton">Change Background Color</button>
             <p>&copy; 2024 BMW M History. All Rights Reserved.</p>
@@ -113,7 +121,7 @@
             <form>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Your name" required>
-                
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Your email" required>
 
