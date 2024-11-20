@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const successMessage = document.getElementById('success-message');
     const loginError = document.getElementById('login-error');
     const registrationError = document.getElementById('registration-error');
+    const userInfo = document.getElementById('user-info');
+    const userName = document.getElementById('user-name');
+    const userEmail = document.getElementById('user-email');
 
     document.getElementById('show-login').addEventListener('click', () => {
         loginForm.classList.remove('d-none');
@@ -62,6 +65,9 @@ document.addEventListener('DOMContentLoaded', () => {
             loginForm.reset();
             loginForm.classList.add('d-none');
             successMessage.classList.remove('d-none');
+            userName.textContent = user.username;
+            userEmail.textContent = user.email;
+            userInfo.classList.remove('d-none');
             setTimeout(() => {
                 successMessage.classList.add('d-none');
             }, 3000);
