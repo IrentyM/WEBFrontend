@@ -18,6 +18,19 @@ body {
     color: white;
 }
 
+.rotate {
+    animation: spin 0.5s ease-in-out;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .step {
     display: none; 
 }
@@ -127,6 +140,16 @@ body {
     width: 500px;
     position: relative;
     text-align: center;
+}
+
+.light-theme .popup-content {
+    background-color: #ffffff;
+    color: black;
+}
+
+.dark-theme .popup-content {
+    background-color: #333;
+    color: white;
 }
 
 .popup-content h2 {

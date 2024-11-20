@@ -12,7 +12,8 @@
     <script defer src="script/popup.js"></script>
     <script defer src="script/darkLight.js"></script>
     <script defer src="script/KeyboardEventHandling.js"></script>
-    <script src="script/greeting.js"></script>
+    <script defer  src="script/greeting.js"></script>
+    <script defer src="script/weather.js"></script>
 </head>
 
 <body>
@@ -23,23 +24,23 @@
                 <img src="https://www.bmw.com/etc.clientlibs/settings/wcm/designs/bmwcom/base/resources/ci2020/img/logo-light.svg" alt="BMW Logo" width="40" height="40" class="me-2">
                 <span>BMW History</span>
             </a>
+            <button id="theme-toggle" class="btn btn-secondary btn-lg">
+                <img id="theme-icon" src="https://svgsilh.com/svg/306030.svg" alt="Theme Icon" style="width: 30px; height: 30px;"/>
+                <!-- <span>Mode</span> -->
+            </button>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <button id="theme-toggle" class="btn btn-secondary btn-lg">Mode</button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto" id="menu">
                     <li class="nav-item">
-                        <a class="nav-link " href="./BMWMseriesHistory.html">Home</a>
+                        <a class="nav-link" href="./BMWMseriesHistory.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="./Models.html">Models</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./Registration.html">Registration</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-secondary ms-lg-2" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -48,6 +49,7 @@
     
     <!-- Main Content -->
     <main class="container my-5">
+
         <!-- Introduction Section -->
         <section class="intro-bg text-center mb-5">
             <div>
@@ -210,6 +212,24 @@
                 </div>
             </div>
         </div>
+
+        <div class="container mt-4">
+            <div class="form-group">
+                <label for="city-select" class="form-label">Choose a city:</label>
+                <select id="city-select" class="form-control">
+                    <option value="Moscow">Moscow</option>
+                    <option value="New York">New York</option>
+                    <option value="London">London</option>
+                    <option value="Tokyo">Tokyo</option>
+                </select>
+            </div>
+        
+            <div id="weather-info" class="mt-4"></div>
+            <div id="bmw-recommendation" class="mt-4"></div>
+        </div>
+        
+        
+        
 
     </main>
 

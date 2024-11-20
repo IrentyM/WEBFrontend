@@ -3,7 +3,7 @@ body {
 }
 
 .light-theme {
-    background: #ffffff;; 
+    background: #ffffff;
     color: black;
 }
 
@@ -16,9 +16,18 @@ body {
     outline: none;
     background-color: #e0e0e0; 
 }
-.menu-item:focus {
-    outline: none;
-    background-color: #e0e0e0; 
+
+.rotate {
+    animation: spin 0.5s ease-in-out;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .navbar {
@@ -44,6 +53,7 @@ body {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+
 #open-popup{
     padding: 10px 20px;
     font-size: 16px;
@@ -78,6 +88,17 @@ body {
     width: 500px;
     position: relative;
     text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.light-theme .popup-content {
+    background-color: #ffffff;
+    color: black;
+}
+
+.dark-theme .popup-content {
+    background-color: #333;
+    color: white;
 }
 
 .popup-content h2 {
@@ -108,7 +129,7 @@ body {
 }
 
 .popup-content button:hover {
-    background-color:rgb(41, 57, 194);
+    background-color: rgb(41, 57, 194);
 }
 
 .close {
@@ -124,5 +145,17 @@ body {
     color: #000;
 }
 
+#weather-info, #bmw-recommendation {
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-
+#bmw-recommendation img {
+    margin-top: 10px;
+    border-radius: 5px;
+}

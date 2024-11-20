@@ -86,11 +86,11 @@ body {
 }
 
 .faq-title {
-    background-color: #3134d6;
+    background-color: rgb(40, 113, 244);
     padding: 15px;
-    cursor: pointer;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    cursor:1pointer;
+    border: 0px solid #ddd;
+    border-radius: 1px;
     margin: 0;
     transition: background-color 0.3s ease;
 }
@@ -154,6 +154,15 @@ body {
     text-align: center;
 }
 
+.light-theme .popup-content {
+    background-color: #ffffff;
+    color: black;
+}
+
+.dark-theme .popup-content {
+    background-color: #333;
+    color: white;
+}
 .popup-content h2 {
     margin-top: 0;
 }
